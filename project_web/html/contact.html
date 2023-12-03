@@ -3,63 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Home</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Include your CSS file for styling -->
+    <title>Ahmed BOUYAHIA - Contact</title>
+    <link rel="stylesheet" href="../css/styles.css"> <!-- Include your CSS file for styling -->
 </head>
-<body>
-
-<!-- Header -->
-<header>
-    <table width="100%">
-        <tr>
-            <th ><a href="home.html">Home</a></th>
-            <th><a href="academic.html">Academic</a></th>
-            <th><a href="experiences.html">Experiences</a></th>
-            <th><a href="contact.html">Contact</a></th>
-    </table>
-</header>
+<body class="common">
+      <!-- Header -->
+      <header>
+         <nav id="nav-wrap">
+            <ul id="nav" class="nav">
+               <li><a href="home.html">Home</a></li>
+               <li ><a href="academic.html">Academic</a></li>
+               <li ><a href="experiences.html">Experiences</a></li>
+               <li class="current"><a href="contact.html">Contact</a></li>
+            </ul>
+            <!-- end #nav -->
+         </nav>
+      </header>
 <br><br>
 
 <!-- Main Content -->
 <!-- Same as index.html, but with the contact form -->
 
 <!-- Main Content -->
-</div>
-<table>
-    <tr>
-        <th><h1>Contact me</h1></th>
-    </tr>
-    <tr>
-        <th><label for="">First Name*</label></th>
-        <th><input type="text" required></th>
-    </tr>
-    <tr>
-        <th><label for="">Last Name</label></th>
-        <th><input type="text"></th>
-    </tr>
-    <tr>
-        <th><label for="">Phone Number*</label></th>
-        <th><input type="text"></th>
-    </tr>
-    <tr>
-        <th><label for="">Email*</label></th>
-        <th><input type="email" required></th>
-    </tr>
-    <tr>
-        <th><label for="">Message</label></th>
-        <th><textarea name="" id="" cols="30" rows="10"></textarea></th>
-    </tr>
-    <tr>
-        <th>
-            <input type="submit" value="submit">
-        </th>
-    </tr>
-</table>
-</div>
+
+<section id="about">
+<form action="" method="post" id="contactForm" name="contactForm">
+					<fieldset>
+
+                  <div class="rowContact">
+				  <div class="image">
+						   <label for="contactName">First Name<span class="required">*</span></label>
+						   </div>
+						   <div class="text">
+						   <input type="text" value="" size="50" id="contactName" name="contactName">
+						   </div>
+                  </div>
+				  <div class="rowContact">
+				  <div class="image">
+						   <label for="contactLastName">Last Name<span class="required">*</span></label>
+						   </div>
+						   <div class="text">
+						   <input type="text" value="" size="50" id="contactLastName" name="contactLastName">
+						   </div>
+                  </div>
+				  <div class="rowContact">
+				  <div class="image">
+						   <label for="contactPhone">Phone Number</label>
+						   </div>
+						   <div class="text">
+						   <input type="text" value="" size="50" id="contactPhone" name="contactPhone">
+						   </div>
+                  </div>
+
+                  <div class="rowContact">
+				  <div class="image">
+						   <label for="contactEmail">Email <span class="required">*</span></label>
+						   </div>
+						   <div class="text">
+						   <input type="text" value="" size="50" id="contactEmail" name="contactEmail">
+						   </div>
+                  </div>
+
+                  
+
+                  <div class="rowContact">
+				  <div class="image">
+                     <label for="contactMessage">Message <span class="required">*</span></label>
+					 </div>
+					  <div class="text">
+                     <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
+					 </div>
+                  </div>
+
+                  <div>
+                     <button class="submit">Submit</button>
+                     <span id="image-loader">
+                        <img alt="" src="images/loader.gif">
+                     </span>
+                  </div>
+
+					</fieldset>
+				   </form> <!-- Form End -->
+</section>
+
+
 
 
 <!-- Footer -->
-<footer>
+<footer class="other">
     <p>&copy; 2023 Ahmed Bouyahia. All rights reserved.</p>
 </footer>
 

@@ -1,0 +1,191 @@
+/* Reset some default styles for better consistency */
+body, h1, p, button {
+    margin: 0;
+    padding: 0;
+}
+
+#index{
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-image: url('../imgs/background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #333;
+    text-align: center;
+}
+
+
+
+h1 {
+   font: 90px/1.1em 'opensans-bold', sans-serif;
+   color: #fff;
+   letter-spacing: -2px;
+   margin: 200px auto 18px auto;
+   text-shadow: 0px 1px 3px rgba(0, 0, 0, .8);
+   text-align: center;
+}
+
+button {
+  background: #444;
+  padding: 20px;
+  width: 300px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 28px;
+  cursor: pointer;
+  transition: all 0.5s; 
+}
+button:hover {
+  background: #fff;
+   color: #2B2B2B;
+}
+
+footer .first{
+  position: absolute;
+}
+
+footer .other{
+  position: relative;
+}
+
+footer {
+  bottom: 0;
+  height: 2.5rem;   
+  color: white;  
+}
+
+
+
+
+.common {
+    background: #2B2B2B;
+}
+
+header {
+    padding: 0px;
+}
+
+#nav-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+#nav {
+    list-style: none;
+    display: flex;
+}
+
+#nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+
+
+ul#nav li a {
+   display: inline;
+   padding: 8px 13px;
+   line-height: 32px;
+	text-decoration: none;
+   text-align: left;
+   color: #fff;
+	transition: color .2s ease-in-out;
+}
+
+ul#nav li a:active { background-color: transparent !important; }
+ul#nav li.current a { color: #F06000; }
+
+.image {
+   float: left;
+   padding-left : 20px;
+   width: 20%;
+   height: 100%;
+}
+.text{
+   float: left;
+   width: 70%;
+   height: 100%;
+}
+#about {
+   background: #2B2B2B;
+   padding-top: 30px;
+   padding-bottom: 50px;
+   overflow: hidden;
+}
+#about .row { 
+padding-top: 10px;
+   padding-bottom: 30px;
+   overflow: hidden;
+}
+
+#about .rowContact { 
+padding-top: 10px;
+   overflow: hidden;
+}
+#about h2 {
+   font: 22px/30px 'opensans-bold', sans-serif;
+   color: #fff;
+   margin-bottom: 12px;
+}
+#about p {
+   line-height: 30px;
+   color: #7A7A7A;
+}
+#about .profile-pic {
+   position: relative;
+   width: 200px;
+   height: 200px;
+   border-radius: 100%;
+}
+
+#about .fac-pic {
+   position: relative;
+   width: 200px;
+   height: 100px;
+}
+
+
+label {
+   font: 15px/24px 'opensans-bold', sans-serif;
+   color: #EBEEEE;
+	display: inline-block;
+	float: left;
+ 
+}
+input,
+textarea,
+select {
+   padding: 18px 20px;
+	color: #eee;
+	background: #373233;
+	border: 0;
+	outline: none;
+   font-size: 15px;
+   line-height: 24px;
+   width: 65%;
+}
+input:focus,
+textarea:focus,
+select:focus {
+	color: #fff;
+	background-color:#F06000;
+}
+button.submit {
+	text-transform: uppercase;
+	color:#fff;
+   background: #0D0D0D;
+	border: none;
+   cursor: pointer;
+   display: inline-block;
+	border-radius: 3px;
+   margin-left: 75%;
+}
+button.submit:hover {
+	color: #0D0D0D;
+	background: #fff;
+}
+span.required {
+	color: #F06000;
+	font-size: 13px;
+}
